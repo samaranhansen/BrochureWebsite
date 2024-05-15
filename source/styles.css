@@ -1,0 +1,91 @@
+:root {
+  --clr-bg: #f5f5f5;
+  --clr-bg2: #e9e9ea;
+  --clr-font: #3c7981;
+  --clr-accent: #d5e2f2;
+
+  --fnt-poppins: "Poppins", sans-serif;
+  --fnt-teachers: "Teachers", sans-serif;
+
+  --fnt-size-xs: 16px;
+  --fnt-size-sm: 20px;
+  --fnt-size-md: 25px;
+  --fnt-size-lg: 40px;
+  --fnt-size-xl: 50px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: inherit;
+}
+
+body {
+  min-height: 100vh;
+  background-image: url("../media/fruitbowl.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+h1 {
+  font-family: var(--fnt-poppins);
+  font-size: var(--fnt-size-xl);
+}
+
+p {
+  font-family: var(--fnt-teachers);
+  font-size: var(--fnt-size-xs);
+}
+
+ul {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+a {
+  font-family: var(--fnt-teachers);
+  font-size: var(--fnt-size-xs);
+  text-decoration: none;
+  color: var(--clr-font);
+}
+
+.siteContainer {
+  width: 100%;
+  text-align: center;
+}
+
+.primaryNav {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--clr-bg);
+  padding: 12px;
+}
+
+.navLogo {
+  display: inline-block;
+  font-size: var(--fnt-size-sm);
+  font-weight: 600;
+}
+
+.primaryNavlist {
+  width: 100%;
+  list-style-type: none;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.primaryNavlist * {
+  display: inline-block;
+  margin-left: 12px;
+}
+
+.hero {
+  margin: 3vw;
+  max-width: 500px;
+  display: 0 auto;
+  text-align: enter;
+}
